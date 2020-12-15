@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class="row">
+   <div class="col-xl-12 text-center">
+       <h1 class="mt-5">Witaj w mojej bibliotece filmów</h1>
+       <p class="lead">Znajdziesz tutaj tylko najlepsze tytuły!</p>
+   </div>
+
+   {% include "buttons.html" %}
+
+   {% for movie in movies %}
+   
+   {% include "card.html" %}
+   
+   {% endfor %}
+</div>
+
+{% endblock %}

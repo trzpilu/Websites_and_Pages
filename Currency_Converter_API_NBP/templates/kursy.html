@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+
+    <h1>Currency Exchange</h1>
+
+    <p>Please choose the currency you'd like to exchange from the drop-down list.</p>
+
+    <form action="/kursy/" method='POST'>
+      <label for="code">Choose a currency code:</label>
+      <select name= code method="GET" action="/">
+        {% for code in codes %}
+        <option value= "{{code}}" SELECTED>{{ code }}</option>"
+        {% endfor %}
+      </select>
+        <br><br>
+      <label for="amount">Amount you'd like to exchange to Polish currency (PLN):</label>
+        <input type="number" id="amount" name="amount">
+          <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="body">
+      <div class="main_body">
+          <div class="main_title">
+              <h1 class="main_title">Obliczona wartość</h1><br>
+          </div>
+          <div class="main_value" >
+              {{ message }} 
+          </div>
+      </div>
+    </div>
+
+  </body>
+</html>

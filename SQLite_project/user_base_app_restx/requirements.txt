@@ -1,0 +1,5 @@
+flask
+flask-restx
+flask_sqlalchemy
+flask_migrate
+pytest

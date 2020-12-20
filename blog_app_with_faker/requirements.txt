@@ -1,0 +1,11 @@
+Flask 
+flask-sqlalchemy 
+flask-migrate
+flask-shell-ipython
+Flask_WTF
+faker
+#waitress
+gunicorn
+heroku
+
+# when using Windows10 to test, pound in waitress and poound out gunicorn
